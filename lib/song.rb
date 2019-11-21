@@ -12,7 +12,11 @@ def save
   @@all << self
  end 
 def artist_name
-    artist.name
+   if artist
+    artist.name 
+   else 
+    nil 
+   end 
 end 
  def self.all
     @@all
